@@ -7,5 +7,5 @@ from flask_project.apis_1_0.users import RegisterUsersResource
 api = Blueprint('', __name__)
 
 # 用户视图
-user_api = Api(api, url_part_order='/api/v1_0')
+user_api = Api(api)
 user_api.add_resource(RegisterUsersResource, '/register')
