@@ -9,4 +9,4 @@ login_parser = register_parser.copy()
 class RegisterUsersResource(Resource):
 	
 	def post(self):
-		pass 
+		pass
