@@ -1,6 +1,6 @@
 #!/bin.bash
-python manage.py db init&&    
-    python manage.py db migrate&&
-	python manage.py db upgrade&&
-	python manage.py runserver&&
-	gunicorn flask_app.wsgi:application -c gunicorn.conf
+python app.py db init&&
+python app.py db migrate&&
+python app.py db upgrade&&
+python app.py runserver&&
+gunicorn flask_app.wsgi:application -c gunicorn.conf
