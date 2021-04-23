@@ -25,6 +25,9 @@ class Config:
     REDIS_HOST = "redis"
     REDIS_PORT = 6379
 
+    AppId = os.getenv('APPID')
+    AppSecret = os.getenv('APP_SECRET')
+
 
 class DevelopConfig(Config):
     pass
