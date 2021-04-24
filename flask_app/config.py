@@ -15,9 +15,7 @@ class Config:
     DEBUG = True
     SECRET_KEY = os.getenv('SECRET_KEY') or 'jkndjffdjjkr'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///app.db'
-    # SQLALCHEMY_DATABASE_URI = f'postgresql+psycopg2://' \
-    #                           f'{PostgreConfig.POSGRE_USERNAME}:{PostgreConfig.POSGRE_PASSWORD}' \
-    #                           f'{PostgreConfig.POSGRE_IP}/{PostgreConfig.POSGRE_DB}'
+
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_RECORD_QUERIES = True
